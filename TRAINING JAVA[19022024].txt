@@ -1,0 +1,2385 @@
+***********TRAINING JAVA********[19/02/2024]
+
+1.Input & Output - Say "Hello, World!"
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        System.out.println("\"Hello, World!\"");
+
+}
+}
+
+2.Input & Output - Hello World with tab
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+         System.out.println("Hello World Hello World");
+    }
+}
+
+3.Input & Output - Hello World with a new line:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+         System.out.println("Hello World");
+         System.out.println("Hello World");
+    }
+}
+
+4.Input & Output - Student Details:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner (System.in);
+        String name=sc.nextLine();
+        int age=sc.nextInt();
+        float cgpa=sc.nextFloat();
+        char Grade=sc.next().charAt(0);
+        System.out.println("Name: " +name);
+        System.out.println("Age: " +age);
+        System.out.println("CGPA: " +Math.floor(cgpa*100)/100);
+        System.out.println("Grade: " +Grade);
+    }
+}
+
+5.ascii char to int conversion
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        char a=sc.next().charAt(0);
+        int b=(char)a;
+        System.out.println(b);
+    }
+}
+
+
+6. ascoii int to char conversion
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        int a=sc.nextInt();
+        char b=(char)a;
+        System.out.println(b);
+}
+}
+
+
+
+
+7.round off:
+ Scanner sc=new Scanner(System.in);
+        float a=sc.nextFloat();
+        System.out.println((int)a);
+        System.out.println((int)Math.ceil(a));
+         System.out.println((int)Math.floor(a));
+
+8.Operators - Fencing the Ground
+
+
+  Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=2*(a+b);
+        int d=a*b;
+        System.out.println("The required length is " + c + " m ");
+        System.out.println("The required area of carpet is " + d + " sqm ");
+         
+9..newspaper agency:
+
+  public static void main(String[] args) {
+          Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        int d=a*(b-c)-100;
+        System.out.println(d);
+
+10.. harrry potter;
+
+ublic static void main(String[] args) {
+         Scanner sc=new Scanner (System.in);
+        int a=sc.nextInt();
+        a=Math.abs(a);// abs->absolute math function which means ignore sign
+        int b=a%10;
+        int c=a/1000;
+        int d=b+c;
+        System.out.println(d);
+    }
+       ----------------PAGE 2---------------
+
+1.Team splitting:
+
+ int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a%b;
+        int d=a/b;
+        System.out.println("The number of friends in each team is " + d + " and left out is "+ c);
+    }
+}
+         
+      https://www.hackerrank.com/contests/fundamentals-of-programming/challenges  
+
+
+DAY 2:
+
+
+2.Operators - Debt Repay
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+        float p=sc.nextFloat();
+        float n=sc.nextFloat();
+        float r=sc.nextFloat();
+         float si=(p*n*r)/100;
+         float amt=si+p;
+         float dis=0.02f *si ;
+         float finl=amt-dis;
+        System.out.printf("%.2f\n",si);
+       System.out.printf("%.2f\n",amt);
+        System.out.printf("%.2f\n",dis);
+        System.out.printf("%.2f\n",finl);
+    }
+}
+
+3.3PSYCHOUS: 3FRDS [MIDPOINT]
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        System.out.println("Arun's house is located at("+(float)(a+c)/2 +"," +(float)(b+d)/2 +")");
+    }
+}
+
+4.HOP & HOP:COORDINATES ARE GIVEN
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        int z=(int)Math.sqrt(Math.pow(x-3,2)+Math.pow(y-4,2));
+        System.out.println(z);
+}
+}
+
+5.dollar to cent:
+
+Scanner sc=new Scanner(System.in);
+        int c1=sc.nextInt();
+        int c2=sc.nextInt();
+        int d1=sc.nextInt();
+        int d2=sc.nextInt(); 
+        int d=(d1+c1) +(d2+c2)/100;
+        int c=(d2+c2)%100;
+        System.out.println(d);
+    System.out.println(c);
+}
+
+6.TREASURE HUNTER:
+
+import java.io.*;
+import java.util.*;
+public class Solution
+{ 
+    public static void main(String[] args)
+    { 
+        Scanner sc=new Scanner(System.in); int g=sc.nextInt();
+        int b=sc.nextInt();
+        int bb=sc.nextInt(); 
+        int bshare=(b*g)/100;
+        int y=(g-bshare); 
+        int bbshare=(bb*y)/100;
+            int z=(y-bbshare);
+        int pirate=z/3; 
+        System.out.println(bshare); 
+        System.out.println(bbshare); 
+        System.out.println(pirate); } }
+
+7.REVERSE A THREE DIGIT NUMBER:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        int temp=0,ans=0;
+        while(num>0)
+        {
+            temp=num%10;
+            ans=temp+(ans*10);
+            num=num/10; 
+        }
+        System.out.println(ans);
+}
+}
+
+8.TIC TAC TOE:
+
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) { 
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        n=n-1; 
+        int row=n/3; 
+        int col=n%3; 
+        System.out.println(+row+ " "+col);
+    } 
+}
+
+9.CHECKING OF ALBHABETS:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        if((ch>='a'&& ch<='z')||(ch>='A'&& ch<='Z'))
+        {
+            if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+            {
+                System.out.println("Vowel");
+            }
+            else
+            {
+                System.out.println("Consonant");
+            }
+        }
+         else
+            {
+                System.out.println("Not an alphabet");
+            }
+    }
+}
+
+10.ELECTRICITY BILL
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int units=sc.nextInt();    
+        if(units<=200)
+        {
+            System.out.println("Rs."+ (int)(units * 0.5));
+        }
+           else if(units<=400)
+        {
+           System.out.println("Rs."+ (int)(units * 0.65 + 100));
+         }
+          else if(units<=600)
+        {
+            System.out.println("Rs."+ (int)(units * 0.80 + 200));
+         }
+            else 
+        {
+            System.out.println("Rs."+ (int)(units * 1.25 + 425));
+        }  
+ }        
+}
+
+-------------PAGE 3------------
+
+
+1.ONLINE SHOPPING:
+
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int c1=sc.nextInt();
+        int d1=sc.nextInt();
+        int s1=sc.nextInt();
+        int c2=sc.nextInt();
+        int d2=sc.nextInt();
+        int s2=sc.nextInt();
+        int c3=sc.nextInt();
+        int d3=sc.nextInt();
+        int s3=sc.nextInt();
+        int f = (int)(c1-(c1*(d1*0.01))+s1);
+        int s = (int)(c2-(c2*(d2*0.01))+s2);
+        int a = (int)(c3-(c3*(d3*0.01))+s3);
+        System.out.println("In Flipkart: Rs."+f);
+        System.out.println("In Snapdeal: Rs."+s);
+        System.out.println("In Amazon: Rs."+a);
+        if(f<=s && f<=a){
+            System.out.println("Choose Flipkart");
+        }
+        else if (s<=f && s<=a){
+            System.out.println("Choose Snapdeal");
+        }
+        else{
+            System.out.println("Choose Amazon");
+        } } }
+
+
+2.Decision Making - Hotel Tariff Calculator
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        if(a>=1 && a<=12 )
+        {
+            if(a==4 ||a==5 ||a==6 || a==11 ||a==12)
+            {
+              b=((b*120)/100)*c;
+                System.out.println(b);
+            }
+            else
+            {
+                b=b*c;
+                System.out.println(b);
+            }
+        }
+        else
+            {
+                System.out.println("Invalid Input");
+            }
+    }
+}
+
+
+3.GIFT FOR BIRTHDAY:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int yr=sc.nextInt();
+        if((yr%4==0 && yr%100!=0) || (yr%400==0))
+        {
+            System.out.println(yr+" is a leap year");
+        }
+        else
+            {
+            System.out.println(yr+" is not a leap year");
+            }
+    }
+}
+
+4.TRENDY NUMBER:
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner c=new Scanner(System.in);
+        int x=0;
+        int a=c.nextInt();
+        if(a>=100 && a<=999)
+        {
+            x=(a/10)%10;
+            if(x%3==0)
+            {
+                System.out.println("Trendy Number");
+            }
+            else
+              {
+                System.out.println("Not a Trendy Number");
+            }
+        }
+        else
+        {
+                System.out.println("Invalid Number");
+        }
+    }
+}
+  
+
+5.TIME SHEET:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+        int sun=sc.nextInt();
+        int mon=sc.nextInt();
+        int tue=sc.nextInt();
+        int wed=sc.nextInt();
+        int thr=sc.nextInt();
+        int fri=sc.nextInt();
+        int sat=sc.nextInt();
+        int rate1 = sun * 150;
+        int rate7 = sat * 125;
+        int rate2, rate3, rate4, rate5, rate6, bonus, bonusRate;
+        if (mon <= 8) {
+        rate2 = mon * 100;
+        } else {
+        bonus = mon - 8;
+        bonusRate = bonus * 115;
+        rate2 = bonusRate + 800;
+        }
+        if (tue <= 8) {
+        rate3 = tue * 100;
+        } else {
+        bonus = tue - 8;
+        bonusRate = bonus * 115;
+        rate3 = bonusRate + 800;
+        }
+        if (wed <= 8) {
+        rate4 = wed * 100;
+        } else {
+        bonus = wed - 8;
+        bonusRate = bonus * 115;
+        rate4 = bonusRate + 800;
+        }
+       if (thr <= 8) {
+       rate5 = thr * 100;
+       } else {
+       bonus = thr - 8;
+       bonusRate = bonus * 115;
+       rate5 = bonusRate + 800;
+       }
+       if (fri <= 8) {
+       rate6 = fri * 100;
+       } else {
+       bonus = fri - 8;
+       bonusRate = bonus * 115;
+       rate6 = bonusRate + 800;
+       }
+      int totalRate = rate1 + rate2 + rate3 + rate4 + rate5 + rate6 + rate7;
+      System.out.println(totalRate);
+        
+    }
+}
+  
+
+6.NUMBER OF DAYS:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+        int y=sc.nextInt();
+        int m=sc.nextInt();
+        if((y>=1900&&y<=9999)&&(m>=1&&m<=12)){
+            switch(m){
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    System.out.println("31 Days");
+                    break;
+                case 2:
+                    if(y%4==0 && y%100!=0|| y%400==0){
+                        System.out.println("29 Days");
+                    }
+                    else{
+                        System.out.println("28 Days");
+                    }
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    System.out.println("30 Days");
+                    break;
+                default:
+                    System.out.println(0);
+            }
+        }
+        else{
+            
+            System.out.println(0);
+        }
+    }
+}
+
+
+
+7.Decision Making - Scholarship:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+        int age=sc.nextInt();
+        int yp=sc.nextInt();
+        int fi=sc.nextInt();
+        int sa=sc.nextInt();
+        float mp=sc.nextFloat();
+        float ap=sc.nextFloat();
+        if((age>=18&&age<21)&&(mp>=60)&&(ap>=80)&&sa<=2 &&fi<=200000){
+            System.out.println("Eligible");
+                     }
+        else if(sa>=2&&mp>=80&&ap>=90 && (fi>=200000&& fi<=250000)){
+            System.out.println("Partially Eligible");
+            
+        }
+        else{
+            System.out.println("Not Eligible");                        
+        }
+        }
+    }
+
+
+
+8.MANGO TREE:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+    int row = sc.nextInt();
+    int col = sc.nextInt();
+    int pos = sc.nextInt();
+    if((pos<=col || pos%col==1 || pos%col==0) && (pos<=row || pos%row==0 || pos%row==1)){
+        System.out.println("Yes");
+    }
+    else{
+        System.out.println("No");
+    }
+    }
+}
+
+
+9.CRICKET:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+    // input
+    int ball = sc.nextInt(); // total number of balls
+    int run = sc.nextInt(); //total number of runs
+    int runsc = sc.nextInt(); // number of runs scored
+    int ballbo = sc.nextInt(); //number of balls bowled
+    // output
+    float over = ball / 6; //total number of overs
+    int overf = ballbo / 6; //total number of overs finished
+    int f1 = ballbo % 6;
+    float f2 = overf + (float)f1 * 1 / 10;
+    float curra = runsc / f2; //current run rate
+    float totra = run / over; //total run rate
+    System.out.println((int)over);
+    System.out.println(f2);
+    System.out.printf("%.1f\n" ,curra);
+    System.out.printf("%.1f\n" ,totra);
+    if(curra >= totra)
+        System.out.println("Eligible to Win");
+    else
+        System.out.println("Not Eligible to Win");
+}
+    }
+
+10.MULTIPLICATION TABLE:
+
+Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    System.out.println("Enter n");
+    int m = sc.nextInt();
+    System.out.println("Enter m");
+    System.out.println("The multiplication table of "+n+" is");
+    for(int i=1; i<=m; i++){
+        int c = i*n;
+        System.out.println(i+"*"+n+"="+c);
+    }
+
+
+===============PAGE 4===================
+			*********CONTROL STATEMENTS*******
+1.PRINT PRIME NUMBERS IN A RANGE:
+
+import java.util.Scanner;
+public class Solution {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt(); // read the input from STDIN
+    for (int i = 2; i <= n; i++) { // iterate from 2 to n
+      boolean prime = true; // assume i is prime
+      for (int j = 2; j < i; j++) { // check for divisibility from 2 to i-1
+        if (i % j == 0) { // if i is divisible by j
+          prime = false; // i is not prime
+          break; // exit the inner loop
+        }
+      }
+      if (prime) { 
+        System.out.print(i + " "); 
+      }
+    }
+    System.out.println();
+  }
+}
+
+
+2.Control Statements - Special number
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner x=new Scanner(System.in);
+        int m=x.nextInt();
+        int n=x.nextInt();
+        int m1,m2,temp;
+        for(int i=m;i<=n;i++)
+        {
+            if(i<=99){
+            m1=i%10;
+            m2=i/10;
+            temp=(m1+m2)+(m1*m2);
+            if(i==temp)
+            {
+                System.out.println(i);
+            }
+            } 
+        }
+       
+    }
+}
+
+3.Control Statements - Amoeba Multiplication
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int a=0,b=1,temp=0;
+        for(int i=3;i<=n;i++)
+        {
+            temp=a+b;
+            a=b;
+            b=temp;
+        }
+        System.out.println(temp);
+        
+    }
+}
+4.Control Statements - Number Series
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int i;
+        for(i=1;i<=n;i++)
+        {
+            if(i%2==0){
+                int tenp=(i*i)-2;
+                System.out.print(tenp+" " );
+            }
+            else
+            {
+                int temp=(i*i)-1;
+                System.out.print(temp+" " );
+            }
+             
+        }
+       
+    }
+}
+
+5.HOLLO SQUARE PATTERN:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int i,j;
+        int n=sc.nextInt();
+        for(i=1;i<=n;i++)
+        {
+          for(j=1;j<=n;j++) 
+          {
+              if(i==1 || j==1 ||  i==n ||  j==n)
+              {
+                  System.out.print("*");
+              }
+              else
+                  {
+                  System.out.print(" ");
+                  }
+          }
+            {
+                  System.out.println();
+              }
+        }
+    }
+}
+
+
+6.TREASURE FINDER:
+
+
+
+import java.util.*;
+
+public class Main {
+
+public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    int c=sc.nextInt();
+    if((a>b && a<c)||(a<b && a>c))
+        System.out.println("The treasure is in the box which has the number "+a);
+    else if((b>a && b<c)||(b<a && b>c))
+         System.out.println("The treasure is in the box which has the number "+b);
+    else
+        System.out.println("The treasure is in the box which has the number "+c);
+    int min=Math.min(Math.min(a,b),c);
+    for(int i=min;i>=1;i--){
+        if(a%i == 0 && b%i == 0 && c%i == 0){
+            System.out.println("The code to open the box is "+i);
+            break;
+        }
+     }
+}
+}
+
+ 7.Control Statements - Collatz problem:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner e=new Scanner(System.in);
+        int a=e.nextInt();
+        int count=0;
+        System.out.println(a);
+        while(a!=1)
+        {
+            if(a%2==0)
+               {
+                  a=a/2;
+                count++;
+               }
+                else
+                {
+                 a=(3*a)+1;
+                count++;
+               }
+            System.out.println(a);
+        }
+        System.out.println(count);
+    }
+}
+
+
+ 8.STRONG NUMBER:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner sc =new Scanner(System.in);
+        int n,rem,i,fact,sum=0;
+        n=sc.nextInt();
+        int temp=n;
+        while(n!=0){
+            i=1;
+            fact=1;
+            rem=n%10;
+            while(i<=rem)
+            {
+                fact=fact*i;
+                i++;
+            }
+            sum=sum+fact;
+            n=n/10;
+        }
+        if(sum==temp)
+        {
+            System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("No");
+        }
+    }
+}
+
+9.INVERTED RIGHT ANGLE TRIANGLE:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int rows = scanner.nextInt(); 
+        for (int i = rows; i >= 1; i--)
+        { for (int j = 1; j <= i; j++) { 
+            System.out.print("*");
+        } 
+         System.out.println();
+        }
+    }
+}
+
+10.SUM OF DIGIT IN SINGLE DIGIT:
+
+ import java.util.*;
+public class Main {
+
+public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    while(n >= 10){
+        int sum = 0;
+        while(n != 0){
+            sum += n % 10;
+            n /= 10;
+        }
+        n = sum;
+    }
+    System.out.println(n);        
+}
+}
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!---PAGE 5 ---!!!!!!!!!!!!!!!!!!!!!!
+				
+ 1.KAPERKAR PATTERN:
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) { 
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt(); 
+        if (isKaprekar(num)) {
+            System.out.println("Kaprekar Number");
+        }
+        else { System.out.println("Not a Kaprekar Number"); 
+             } 
+        scanner.close();
+    }
+
+public static boolean isKaprekar(int num) {
+    long square = (long) num * num;
+    String squareStr = String.valueOf(square);
+    int length = squareStr.length();
+    for (int i = 1; i < length; i++) {
+        long leftPart = Long.parseLong(squareStr.substring(0, i));
+        long rightPart = Long.parseLong(squareStr.substring(i));
+        if (leftPart + rightPart == num && rightPart != 0) {
+            return true;
+        }
+    }
+    return false;
+}
+}
+
+
+
+
+2.TRAPEZIUM PATTERN:
+
+import java.util.Scanner;
+
+public class Main { public static void main(String[] args) { Scanner input = new Scanner(System.in);
+ int n = input.nextInt();
+ int a = 1;
+ int b = n * n + 1;
+
+    for (int i = n; i >= 1; i--) {
+        for (int h = 0; h < n - i; h++)
+            System.out.print("--");
+        for (int j = 0; j < i; j++) {
+            System.out.print(a++ + "*");
+        }
+        for (int k = 0; k < i - 1; k++) {
+            System.out.print(b++ + "*");
+        }
+        System.out.println(b);
+        b = b - 2 * (i - 1);
+    }
+}
+}
+
+3.1D ARRAY -SAME OR NOT:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public static void main(String args[])
+    {
+        int i,j,n1,n2,sum1=0,sum2=0;
+        Scanner sc=new Scanner(System.in);
+        n1=sc.nextInt();
+        n2=sc.nextInt();
+        int arr1[]=new int[n1];
+        int arr2[]=new int[n2];
+        for(i=0;i<n1;i++)
+        {
+            arr1[i]=sc.nextInt();
+            sum1+=arr1[i];
+        }
+        for(i=0;i<n2;i++)
+        {
+            arr2[i]=sc.nextInt();
+            sum2+=arr2[i];
+        }
+        if(n1==n2 && sum1==sum2)
+        {
+            System.out.println("Same");
+        }
+        else
+         {
+            System.out.println("Not Same");
+        }
+        
+    }
+}
+
+
+4.COUNT DISTINT ELEMENTS:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        int unique=1;
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        for(int i=0;i<n-1;i++)
+        {
+            if(arr[i]==arr[i+1])
+            {
+                continue;
+                
+            }
+            else {
+                unique++;
+            }
+        }
+        System.out.println("There are " + unique + " distinct element in the array.");
+    }
+}
+
+5.DAY:3
+
+5.COMPACTIBLE ARRAYS:
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        int i,n1,n2,isComp=0;
+        Scanner sc=new Scanner(System.in);
+        n1=sc.nextInt();
+        int arr1[]=new int[n1];
+        for(i=0;i<n1;i++)
+        {
+            arr1[i]=sc.nextInt();
+        }
+        n2=sc.nextInt();
+        int arr2[]=new int[n2];
+        for(i=0;i<n2;i++)
+        {
+            arr2[i]=sc.nextInt();
+        }
+        if(n1==n2)
+        {
+        for(i=0;i<n1;i++)
+        {
+            if(arr1[i]>=arr2[i])
+            {
+                isComp=1;
+            }
+            else
+            {
+                isComp=0; 
+            break;
+            }
+        }
+        }
+        if(isComp==1)
+        {
+            System.out.println("Compatible");
+        }
+        else
+         {
+            System.out.println("Incompatible");
+        }  
+    }
+}
+
+
+6.Arrays 1D - Sum of even numbers and odd numbers:
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       int i,n1,n1even=0,n1odd=0;
+        Scanner sc=new Scanner(System.in);
+        n1=sc.nextInt();
+        int arr1[]=new int[n1];
+        for(i=0;i<n1;i++)
+        {
+           arr1[i]=sc.nextInt();
+        }
+        for(i=0;i<n1;i++)
+        {
+            if(arr1[i]%2==0)
+            {
+                n1even=n1even+arr1[i];
+            }
+            else
+                {
+                n1odd=n1odd+arr1[i];
+            }
+        }
+            System.out.println("The sum of the even numbers in the array is "+ n1even);
+            System.out.println("The sum of the odd numbers in the array is "+ n1odd);
+    
+    }
+}
+
+
+7.ascending order:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+       // int temp=0;
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+         System.out.println("The Sorted array is:  ");
+         Arrays.sort(arr);
+       for(int i=0;i<n;i++)
+       System.out.println(arr[i]);
+    }
+}
+    
+       /* for(int i=0;i<n;i++)
+        {
+         for(int j=i+1;j<n;j++)
+            {
+                if(arr[i]>arr[j])
+                {
+                    temp=arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=temp;
+                }
+            }
+        }*/
+       
+
+8.QUEUE:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        int[] a=new int[n];
+        int bus=0,sum=0;
+        for(int i=0;i<n;i++)
+        {
+            a[i]=sc.nextInt();
+            if(sum+a[i]>m)
+            {
+                bus++;
+                sum=a[i];
+            }
+            else
+            {
+                 sum=sum+a[i];
+            }
+        }
+             if(sum>0)
+                bus++;
+                 System.out.println(bus);
+        }
+    }
+    
+9.ARRAT INSERTION:
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+            
+        }
+        int pos,ele=0;
+        pos=sc.nextInt();
+        if(pos>n){
+            System.out.println("Invalid Input");
+        }
+        else{
+            ele=sc.nextInt();
+            System.out.println("Array after insertion is ");
+            
+        
+         for(int i=0;i<n;i++)
+         {
+             if(i==pos-1)
+             {
+                System.out.println(ele);
+              
+             }
+              System.out.println(arr[i]);
+         }
+        }
+    }
+}
+
+10.REMOVE DUPLICATE ELEMENTS:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n,flag;
+        n=sc.nextInt();
+        int[] a=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+            flag=1;
+            for(int j=0;j<i;j++)
+            {
+                if(a[i]==a[j])
+                {
+                    flag=0;
+                }
+            }
+            if(flag==1)
+            {
+                System.out.println(a[i]);
+            }
+        }
+    }
+}
+
+
+-------------------PAGE 6------------------
+
+ARRAYS 1D-ONLINE GAMING:
+
+import java.util.*; 
+public class Solution {
+    public static void main (String[]args) { 
+        Scanner sc = new Scanner (System.in); 
+        int n = sc.nextInt (); 
+        int arr[] = new int[n];
+
+    for (int i = 0; i < n; i++)
+        arr[i] = sc.nextInt ();
+    int p1 = 0, p2 = n - 1;
+
+    while (p1 < p2)
+    {
+        while (arr[p1] % 2 == 0 && p1 < p2)
+            p1++;
+
+        while (arr[p2] % 2 != 0 && p1 < p2)
+            p2--;
+
+        if (p1 < p2)
+        {
+            int temp = arr[p1]; 
+            arr[p1] = arr[p2];
+            arr[p2] = temp;
+            p1++;
+            p2--;
+        }
+    } 
+    System.out.println("Array after Segregation");
+    for (int i = 0; i < n; i++)
+        System.out.print (arr[i] + " ");
+} 
+}
+
+2.TOYLAND:
+
+import java.util.*;
+
+class House { int number; int position;
+
+House(int num, int pos) {
+    number = num;
+    position = pos;
+}
+}
+
+public class Main { public static void main(String[] args) { Scanner scanner = new Scanner(System.in); int numHouses = scanner.nextInt(); House[] houses = new House[numHouses];
+
+    for (int i = 0; i < numHouses; i++) {
+        int houseNum = scanner.nextInt();
+        int position = scanner.nextInt();
+        houses[i] = new House(houseNum, position);
+    }
+
+    Arrays.sort(houses, (a, b) -> a.position - b.position);
+
+    int maxPlotSize = 0;
+    int maxPlotStart = 0;
+    int maxPlotEnd = 0;
+
+    for (int i = 0; i < numHouses - 1; i++) {
+        int plotSize = houses[i + 1].position - houses[i].position;
+        if (plotSize > maxPlotSize) {
+            maxPlotSize = plotSize;
+            maxPlotStart = Math.min(houses[i].number, houses[i + 1].number);
+            maxPlotEnd = Math.max(houses[i].number, houses[i + 1].number);
+        }
+    }
+
+    System.out.println(maxPlotStart + " " + maxPlotEnd);
+}
+}
+
+3.TRANSPOSE MATRIX:
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int row=sc.nextInt();
+        int[][] a=new int[row][row];
+        for( int i=0;i<row;i++)
+        {
+            for(int j=0;j<row;j++)
+            {
+            a[i][j]=sc.nextInt();
+                
+            }
+        }
+       for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<row;j++)
+        {
+            System.out.print(a[i][j] +" ");
+        }
+        System.out.println();
+    }
+        System.out.println("Transpose matrix is:");
+        for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<row;j++)
+        {
+            System.out.print(a[j][i] +" ");
+        }
+        System.out.println();
+    }
+}
+}
+
+4.PAIR THE CONTAINER:
+
+import java.util.Arrays; import java.util.Scanner;
+
+public class ContainerPairs {
+
+public static int[][] pairContainers(int numContainers, int[] capacities) {
+
+    Arrays.sort(capacities);
+
+
+    int[][] pairs = new int[numContainers / 2 + numContainers % 2][2];
+
+
+    int start = 0;
+    int end = numContainers - 1;
+    int pairIndex = 0;
+
+    while (start < end) {
+        pairs[pairIndex][0] = capacities[end];
+        pairs[pairIndex][1] = capacities[start];
+        start++;
+        end--;
+        pairIndex++;
+    }
+
+
+    if (start == end) {
+        pairs[pairIndex][0] = capacities[start];
+        pairs[pairIndex][1] = 0;
+    }
+
+    return pairs;
+}
+
+public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+
+    int numContainers = scanner.nextInt();
+    int[] capacities = new int[numContainers];
+    for (int i = 0; i < numContainers; i++) {
+        capacities[i] = scanner.nextInt();
+    }
+
+    int[][] pairs = pairContainers(numContainers, capacities);
+
+    for (int i = 0; i < pairs.length; i++) {
+        System.out.println(pairs[i][0] + " " + pairs[i][1]);
+    }
+
+    scanner.close();
+}
+}
+
+
+ 5.SMALLEST POSITIVE MISSING NUMBER:
+
+import java.util.*; class Main {
+
+public static void main(String[] args) {
+  Scanner in=new Scanner(System.in);
+    int n=in.nextInt();
+    int arr[]=new int[n]; 
+    for (int i = 0; i < n; i++) {
+        arr[i]=in.nextInt(); }
+    int start=1;
+    Arrays.sort(arr);
+    // int ind=Arrays.binarySearch(arr,start);
+    for (int i = 0; i < n; i++) {
+        if (arr[i]<=0){ continue; }
+        if(arr[i]==start)
+        { start++; }
+        else if(arr[i]>start){
+            break; 
+        } }
+    System.out.println(start);
+}}
+--------------------page 7---------------
+
+8. sum of array elements:
+
+
+import java.util.*;
+ public class Main
+{
+  public static int sum(int[] a,int n)
+  {
+    if(n<=0)
+      return 0;
+    else
+      return (sum(a,n-1)+a[n-1]);
+  }
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    int[] a=new int[n];
+    for(int i=0;i<n;i++)
+    {
+      a[i]=sc.nextInt();
+    }
+    System.out.println(sum(a,n));
+}
+}
+
+10.SUM OF POSITIVE ODD NUMBERS:
+
+import java.util.*;
+class Main
+{
+  public static int sum(int a[],int i,int n)
+  {
+    if(i==n)
+    {
+      return 0;
+    }
+    else{
+      if(a[i]%2==1)
+      {
+        return a[i]+sum(a,i+1,n);
+      }
+      else
+      {
+        return sum(a,i+1,n);
+      }
+    }
+  }
+  public static void main(String args[])
+  {
+   Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    int[] a=new int [n];
+    for (int i=0;i<n;i++)
+      {
+      a[i]=sc.nextInt();
+    }
+    System.out.println("Sum = "+sum(a,0,n));
+  }
+}
+
+FOR MY REFERRENCE;
+
+int number = 987654, reverse = 0;  
+while(number != 0)   
+{  
+int remainder = number % 10;  
+reverse = reverse * 10 + remainder;  
+number = number/10;  
+}  
+System.out.println("The reverse of the given number is: " + reverse);  
+}  
+
+
+
+
+
+
+
+      DECISION MAKING:
+
+ public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        if((ch>='a' && ch<='z' )||(ch>='A' && ch<='Z'))
+        {
+            if(ch=='a'|| ch=='e' || ch=='i'||ch=='o'|| ch=='u'||ch=='A'||ch=='E'|| ch=='I'||ch=='O'||ch=='U')
+            {
+                System.out.println("Vowel");
+            }
+            else
+            {
+                System.out.println("Consonant");
+            }
+        }
+         else
+            {
+                System.out.println("its not an alphabet");
+
+
+
+            }
+
+
+
+UNIFORMILY MATIX:
+
+import java.util.*;
+class Main
+{
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    int i,j,ecount=0,ocount=0;
+    int[][] a =new int[10][10];
+    for(i=0;i<n;i++)
+    {
+      for(j=0;j<n;j++)
+      {
+        a[i][j]=sc.nextInt();
+      }
+    }
+    for(i=0;i<n;i++)
+    {
+      for(j=0;j<n;j++)
+      {
+       if(a[i][j]%2==0)
+       {
+         ecount++;
+       }
+        else
+        {
+          ocount++;
+      }
+    }
+        
+  }
+    if(ecount==(n*n)||ocount==(n*n))
+    {
+      System.out.println("Yes");
+    }
+    else
+      {
+      System.out.println("No");
+    }
+    
+  }
+}
+
+
+
+
+
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+        int y=sc.nextInt();
+        int m=sc.nextInt();
+        if((y>=1900&&y<=9999)&&(m>=1&&m<=12)){
+            switch(m){
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    System.out.println("31 Days");
+                    break;
+                case 2:
+                    if(y%4==0 && y%100!=0|| y%400==0){
+                        System.out.println("29 Days");
+                    }
+                    else{
+                        System.out.println("28 Days");
+                    }
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    System.out.println("30 Days");
+                    break;
+                default:
+                    System.out.println(0);
+            }
+        }
+        else{
+            
+            System.out.println(0);
+        }
+    }
+}
+
+
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+        int age=sc.nextInt();
+        int yp=sc.nextInt();
+        int fi=sc.nextInt();
+        int sa=sc.nextInt();
+        float mp=sc.nextFloat();
+        float ap=sc.nextFloat();
+        if((age>=18&&age<21)&&(mp>=60)&&(ap>=80)&&sa<=2 &&fi<=200000){
+            System.out.println("Eligible");
+                     }
+        else if(sa>=2&&mp>=80&&ap>=90 && (fi>=200000&& fi<=250000)){
+            System.out.println("Partially Eligible");
+            
+        }
+        else{
+            System.out.println("Not Eligible");                        
+        }
+        }
+    }
+
+
+
+
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+    int row = sc.nextInt();
+    int col = sc.nextInt();
+    int pos = sc.nextInt();
+    if((pos<=col || pos%col==1 || pos%col==0) && (pos<=row || pos%row==0 || pos%row==1)){
+        System.out.println("Yes");
+    }
+    else{
+        System.out.println("No");
+    }
+    }
+}
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+    // input
+    int ball = sc.nextInt(); // total number of balls
+    int run = sc.nextInt(); //total number of runs
+    int runsc = sc.nextInt(); // number of runs scored
+    int ballbo = sc.nextInt(); //number of balls bowled
+    // output
+    float over = ball / 6; //total number of overs
+    int overf = ballbo / 6; //total number of overs finished
+    int f1 = ballbo % 6;
+    float f2 = overf + (float)f1 * 1 / 10;
+    float curra = runsc / f2; //current run rate
+    float totra = run / over; //total run rate
+    System.out.println((int)over);
+    System.out.println(f2);
+    System.out.printf("%.1f\n" ,curra);
+    System.out.printf("%.1f\n" ,totra);
+    if(curra >= totra)
+        System.out.println("Eligible to Win");
+    else
+        System.out.println("Not Eligible to Win");
+}
+    }
+
+
+
+
+
+/*class ass{
+    int num1;
+    int num2;
+}
+
+class ess extends ass{
+    public void print(int num1,int num2)
+    {
+    System.out.println(num1 + num2);
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	    ess obj=new ess();
+	    obj.print(4,5);
+	
+	}
+}
+*/
+class sbi{
+    String cust_name;
+    long acc_no;
+    float b_bal;
+    
+    void display_balance()
+    {
+        System.out.println("Hello   "+   cust_name);
+        System.out.println(" YOUR CURRENT BALANCE IS RS."+b_bal);
+    }
+    
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	     sbi obj=new sbi();
+	     obj.cust_name="Abinaya";
+	     obj.b_bal=1000000;
+	     obj.display_balance();
+	}
+}
+
+
+
+
+
+********[29/02/2024]  DOUBLY LINKED LIST******
+
+
+class Node
+{
+    int data;
+    Node prev;
+    Node next;
+    public Node(int d){
+        data=d;
+        prev=null;
+        next=null;
+    }
+}
+class DoublyLinkedList{
+    Node head=null;
+    static int size=0; 
+    
+    void insert_end(int d)
+    {
+        Node node=new Node(d);
+        if(head==null)
+        {
+            head=node;
+        }
+        else{
+            Node temp = head;
+            while(temp.next!=null)
+            {
+               temp=temp.next;
+            }
+            temp.next=node;
+            node.prev=temp;
+        }
+        size++;
+    }
+    void display(){
+        Node temp=head;
+        while(temp!=null)
+        {
+           System.out.print(temp.data+"-->");
+            temp=temp.next;
+        }
+        System.out.print("null");
+    }
+    void reverse()
+    {
+        Node temp=head;
+        while(temp!=null)
+        {
+            System.out.print(temp.data+"-->");
+            temp=temp.prev;
+        }
+        System.out.print("null");
+    }
+    void insert_front(int d)
+    {
+        Node node=new Node(d);
+        if(head==null)
+        {
+            head=node;
+        }
+        else{
+            node.next=head;
+            head.prev=node;
+            head=node;
+        }
+        size++;
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	    DoublyLinkedList dll=new DoublyLinkedList();
+	    dll.insert_end(10);
+		dll.insert_end(20);
+		dll.insert_end(30);
+		dll.display();
+		dll.display();
+		dll.insert_front(100);
+	}
+}
+
+**************STACK***************
+
+/*class Node
+{
+    int data;
+    Node prev;
+    Node next;
+    public Node(int d){
+        data=d;
+        prev=null;
+        next=null;
+    }
+}
+class DoublyLinkedList{
+    Node head=null;
+    static int size=0; 
+    
+    void insert_end(int d)
+    {
+        Node node=new Node(d);
+        if(head==null)
+        {
+            head=node;
+        }
+        else{
+            Node temp = head;
+            while(temp.next!=null)
+            {
+               temp=temp.next;
+            }
+            temp.next=node;
+            node.prev=temp;
+        }
+        size++;
+    }
+    void display(){
+        Node temp=head;
+        while(temp!=null)
+        {
+           System.out.print(temp.data+"-->");
+            temp=temp.next;
+        }
+        System.out.print("null");
+    }
+    void reverse()
+    {
+        Node temp=head;
+        while(temp!=null)
+        {
+            System.out.print(temp.data+"-->");
+            temp=temp.prev;
+        }
+        System.out.print("null");
+    }
+    void insert_front(int d)
+    {
+        Node node=new Node(d);
+        if(head==null)
+        {
+            head=node;
+        }
+        else{
+            node.next=head;
+            head.prev=node;
+            head=node;
+        }
+        size++;
+    }
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+
+public class Main
+{
+	public static void main(String[] args) {
+	    DoublyLinkedList dll=new DoublyLinkedList();
+	    dll.insert_end(10);
+		dll.insert_end(20);
+		dll.insert_end(30);
+		dll.display();
+		dll.display();
+		dll.insert_front(100);
+	}
+}*/
+
+
+
+
+class stack
+{
+    static int top=0,size=6;
+    int[] st=new int[size];
+    boolean isFull()
+    {
+        return top==size;
+        
+    }
+    void push(int d)
+    {
+        if(isFull())
+        {
+           System.out.println("STACK IS FULL");
+        }
+        else{
+            st[top]=d;
+            top++;
+        }
+    }
+    boolean isEmpty()
+    {
+        return top==0;
+    }
+    int pop()
+    {
+        int val=-1;
+        if(isEmpty())
+        {
+           System.out.println("STACK IS EMPTY");
+        }
+        else {
+            top--;
+            val=st[top];
+        }
+        return val;
+    }
+    void display()
+    {
+        
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    stack s=new stack();
+	    s.push(100);
+	    s.push(200);
+        s.push(300);
+        s.push(400);
+        s.push(500);
+        s.push(600);
+        
+       
+        
+}
+}
+ 
+
+-----------------------QUEUE-----------------
+
+
+
+
+class Node 
+{
+    int data;
+    Node next;
+    public Node(int d)
+    {
+        data =d;
+        next =null;
+    }
+}
+class Queue {
+    Node front=null,rear=null;
+    static int size=0;
+    void enQueue(int d)
+    {
+        Node node=new Node(d);
+        
+        if(front==null)
+        {
+        front=node;   
+        rear=node;
+        }
+    
+    else{
+        rear.next=node;
+        rear=rear.next;
+        }
+    size++;
+    }
+    void display()
+    {
+        Node temp=front;
+        while(temp!=null)
+        {
+            System.out.println(temp.data + " ");
+            temp=temp.next;
+        }
+        System.out.println();
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		Queue qu = new Queue();
+		qu.Queue(10);
+		qu.Queue(20);
+		qu.Queue(30);
+		qu.Queue(40);
+		qu.Queue(50);
+		qu.display();
+	}
+}
+
+ 
+
+__________QUEUE IN LINKED LIST____________
+
+
+class Node 
+{
+    int data;
+    Node next;
+    public Node(int d)
+    {
+        data =d;
+        next =null;
+    }
+}
+class Queue {
+    Node front=null,rear=null;
+    static int size=0;
+    void enQueue(int d)
+    {
+        Node node=new Node(d);
+        
+        if(front==null)
+        {
+        front=node;   
+        rear=node;
+        }
+    
+    else{
+        rear.next=node;
+        rear=rear.next;
+        }
+    size++;
+    }
+    boolean isEmpty()
+    {
+        return front==null;
+    }
+    int deQueue()
+    {
+        if(isEmpty())
+        {
+        return -1;
+    }
+    int val=front.data;
+    front=front.next;
+    size--;
+    return val;
+}
+    void display()
+    {
+        Node temp=front;
+        while(temp!=null)
+        {
+            System.out.print(temp.data + " ");
+            temp=temp.next;
+        }
+        System.out.println();
+    }
+}
+class Main
+{
+	public static void main(String[] args) {
+		Queue que = new Queue();
+		que.enQueue(10);
+		que.enQueue(20);
+		que.enQueue(30);
+		que.enQueue(40);
+		que.enQueue(50);
+		que.display();
+		que.deQueue();
+		que.display();
+	}
+}
+class Node 
+{
+    int data;
+    Node next;
+    public Node(int d)
+    {
+        data =d;
+        next =null;
+    }
+}
+class Queue {
+    Node front=null,rear=null;
+    static int size=0;
+    void enQueue(int d)
+    {
+        Node node=new Node(d);
+        
+        if(front==null)
+        {
+        front=node;   
+        rear=node;
+        }
+    
+    else{
+        rear.next=node;
+        rear=rear.next;
+        }
+    size++;
+    }
+    boolean isEmpty()
+    {
+        return front==null;
+    }
+    int deQueue()
+    {
+        if(isEmpty())
+        {
+        return -1;
+    }
+    int val=front.data;
+    front=front.next;
+    size--;
+    return val;
+}
+    void display()
+    {
+        Node temp=front;
+        while(temp!=null)
+        {
+            System.out.print(temp.data + " ");
+            temp=temp.next;
+        }
+        System.out.println();
+    }
+}
+class Main
+{
+	public static void main(String[] args) {
+		Queue que = new Queue();
+		que.enQueue(10);
+		que.enQueue(20);
+		que.enQueue(30);
+		que.enQueue(40);
+		que.enQueue(50);
+		que.display();
+		que.deQueue();
+		que.display();
+	}
+}
+
+
+
+------------BINARY SEARCH TREE------------
+
+class TreeNode
+{
+    int data;
+    TreeNode left;
+    TreeNode right;
+    public TreeNode(int d)
+    {
+        data =d;
+        left =null;
+        right =null;
+    }
+}
+class BinarySearchTree
+{
+    TreeNode root=null;
+    void insert(int d)
+    {
+        root=insert(root,d);
+    }
+    TreeNode insert(TreeNode curr,int d)
+    {
+        if(curr==null)
+        {
+            TreeNode node=new TreeNode(d);
+            return node;
+        }
+        
+        if(curr.data>d)
+        {
+            curr.left=insert(curr.left,d);
+        }
+        else{
+            curr.right=insert(curr.right,d);
+        }
+        return curr;
+    }
+    void pre_order(){
+        pre_order(root);
+    }
+    void pre_order(TreeNode curr){
+        if(curr==null){
+            return;
+        }
+        System.out.print(curr.data +  " ");
+        pre_order(curr.left);
+        pre_order(curr.right);
+    }
+     void post_order(){
+         post_order(root);
+    }
+    void  post_order(TreeNode curr){
+        if(curr==null){
+            return;
+        }
+        System.out.print(curr.data +  " ");
+         post_order(curr.left);
+         post_order(curr.right);
+    }
+     void In_order(){
+        In_order(root);
+    }
+    void In_order(TreeNode curr){
+        if(curr==null){
+            return;
+        }
+        System.out.print(curr.data +  " ");
+        In_order(curr.left);
+        In_order(curr.right);
+    }
+    boolean search(int key)
+    {
+        return search(key,root);
+    }
+    boolean search(int key,TreeNode curr)
+    {
+        if(curr==null)
+        {
+            return false;
+        }
+        else if(key==curr.data)
+        {
+          System.out.println(curr.data +" -->");
+          return true;
+        }
+        else if(key<curr.data)
+        {
+          System.out.println(curr.data +" -->");
+          return search(key,curr.left);
+        }
+        else 
+        {
+          System.out.println(curr.data +" -->");
+          return search(key,curr.right);
+        }
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	    BinarySearchTree bst =new BinarySearchTree();
+	    bst.insert(40);
+	    bst.insert(20);
+	    bst.insert(60);
+	    bst.insert(10);
+	    bst.insert(30);
+	    //bst.insert(50);
+	   // bst.insert(70);
+	    bst.pre_order();
+	    System.out.println("  ");
+	    bst.In_order();
+	    System.out.println("  ");
+	    bst.post_order();
+	    System.out.println("  ");
+	    System.out.println( bst.search(30) );
+	}
+}
+
+
+
